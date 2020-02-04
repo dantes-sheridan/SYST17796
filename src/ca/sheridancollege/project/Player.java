@@ -12,7 +12,25 @@ package ca.sheridancollege.project;
 public abstract class Player 
 {
     private String playerID; //the unique ID for this player
+    private GroupOfCards hand;//Player's card list
+    private int cardSum;    //sum of cards the player has
+    private int playerScore;//how many games the player won
     
+    public void setCardSum(int cardSum) {
+        this.cardSum = cardSum;
+    }
+
+    public void setPlayerScore(int playerScore) {
+        this.playerScore = playerScore;
+    }
+
+    public int getCardSum() {
+        return cardSum;
+    }
+
+    public int getPlayerScore() {
+        return playerScore;
+    }
     /**
      * A constructor that allows you to set the player's unique ID
      * @param name the unique ID to assign to this player.

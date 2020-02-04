@@ -1,4 +1,4 @@
-/**
+/**modifier: Xingning Xu 2020-02-03
  * SYST 17796 Project Winter 2020 Base code.
  * Students can modify and extend to implement their game.
  * Add your name as a modifier and the date!
@@ -16,6 +16,7 @@ public abstract class Game
 {
     private final String gameName;//the title of the game
     private ArrayList <Player> players;// the players of the game
+    private GroupOfCards deck; // the deck the game is using
     
     public Game(String givenName)
     {

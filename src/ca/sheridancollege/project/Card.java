@@ -13,7 +13,18 @@ package ca.sheridancollege.project;
  */
 public abstract class Card 
 {
+    private String suit;//suit of card
+    private int value;  //value of card
     //default modifier for child classes
+
+    public String getSuit() {
+        return suit;
+    }
+
+    public int getValue() {
+        return value;
+    }
+    
     
     /**
      * Students should implement this method for their specific children classes 

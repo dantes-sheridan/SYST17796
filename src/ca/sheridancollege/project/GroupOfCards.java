@@ -53,5 +53,11 @@ public class GroupOfCards
     public void setSize(int givenSize) {
         size = givenSize;
     }
+    /**
+     * @return the card dealt, also should make change to the remaining deck 
+     */
+    public int dealCard(){
+    return 0; //placeholder
+    }
     
 }//end class
