@@ -12,6 +12,8 @@ package ca.sheridancollege.project;
 public abstract class Player 
 {
     private String playerID; //the unique ID for this player
+
+    private int playersNumber; // gets number of players
     private GroupOfCards hand;//Player's card list
     private int cardSum;    //sum of cards the player has
     private int playerScore;//how many games the player won
@@ -57,6 +59,21 @@ public abstract class Player
         playerID = givenID;
     }
     
+    public int getPlayersNumber() {
+        return playersNumber;
+    }
+
+    public void setPlayersNumber(int playerNumber) {
+        this.playersNumber = playersNumber;
+    }
+
+    public GroupOfCards getHand() {
+        return hand;
+    }
+
+    public void setHand(GroupOfCards hand) {
+        this.hand = hand;
+    }
     /**
      * The method to be instantiated when you subclass the Player class
      * with your specific type of Player and filled in with logic to play your game.
